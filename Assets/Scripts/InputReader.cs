@@ -9,7 +9,7 @@ public class InputReader : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(_leftMouseButton))
+        if (Input.GetMouseButtonDown(_leftMouseButton))
         {
             LeftMouseCliked?.Invoke();
         }

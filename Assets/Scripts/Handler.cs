@@ -21,7 +21,7 @@ public class Handler : MonoBehaviour
 
     private void OnDisable()
     {
-        _raycaster.CubeHit += OnCubeHit;
+        _raycaster.CubeHit -= OnCubeHit;
     }
 
     private void OnCubeHit(Cube cubeHit)
