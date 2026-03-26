@@ -30,7 +30,7 @@ public class Handler : MonoBehaviour
 
         if (CanSplit(cubeHit.SplitChance))
         {
-            newCubes = _spawner.SpawnCubes(NumberOfNewCubes(),cubeHit,_colorChanger);
+            newCubes = _spawner.SpawnCubes(GetNumberOfNewCubes(),cubeHit,_colorChanger);
         }
         else
         {
@@ -45,7 +45,7 @@ public class Handler : MonoBehaviour
         return Random.Range(_splitChanceMin,_splitChanceMax+1)<=splitChance;
     }
 
-    private int NumberOfNewCubes()
+    private int GetNumberOfNewCubes()
     {
         return Random.Range(_minSpawnAmount, _maxSpawnAmount + 1);
     }

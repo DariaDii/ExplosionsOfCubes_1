@@ -261,8 +261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7171239d31d94164eaf7b026a81886fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pushForce: 2
+  _pushForce: 5
   _spinForce: 5
+  _explosionDefaultRadius: 5
+  _explosionDefaultForce: 200
 --- !u!4 &630614225
 Transform:
   m_ObjectHideFlags: 0
